@@ -10,6 +10,7 @@ require (
 
 require (
 	github.com/andybalholm/brotli v1.2.3 // indirect
+	github.com/flynn/noise v1.0.0 // indirect
 	github.com/ghodss/yaml v1.0.1-0.20220118164431-d8423dcdf344 // indirect
 	github.com/google/btree v1.1.3 // indirect
 	github.com/google/gopacket v1.1.19 // indirect
@@ -20,10 +21,15 @@ require (
 	github.com/juju/ratelimit v1.0.2 // indirect
 	github.com/klauspost/compress v1.20.0 // indirect
 	github.com/klauspost/cpuid/v2 v2.4.1 // indirect
+	github.com/klauspost/reedsolomon v1.12.3 // indirect
 	github.com/koron/go-ssdp v0.0.4 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	github.com/libp2p/go-nat v1.0.1-0.20250821073202-01afc089f138 // indirect
 	github.com/libp2p/go-netroute v0.2.1 // indirect
+	github.com/metacubex/kcp-go v0.0.0-20260105040817-550693377604 // indirect
+	github.com/metacubex/randv2 v0.2.0 // indirect
+	github.com/metacubex/sing v0.5.2 // indirect
+	github.com/metacubex/smux v0.0.0-20260105030934-d0c8756d3141 // indirect
 	github.com/miekg/dns v1.1.73 // indirect
 	github.com/pelletier/go-toml v1.9.5 // indirect
 	github.com/pion/dtls/v3 v3.1.5 // indirect
@@ -44,11 +50,12 @@ require (
 	go4.org/netipx v0.0.0-20231129151722-fdeea329fbba // indirect
 	golang.org/x/crypto v0.58.0 // indirect
 	golang.org/x/crypto/x509roots/fallback v0.0.0-20261020153306-9f2b28d4331a // indirect
-	golang.org/x/exp v0.0.0-20240506185415-9bf2ced13842 // indirect
+	golang.org/x/exp v0.0.0-20240904232852-e7e105dedf7e // indirect
 	golang.org/x/net v0.61.0 // indirect
 	golang.org/x/sync v0.24.0 // indirect
 	golang.org/x/sys v0.49.0 // indirect
 	golang.org/x/text v0.43.0 // indirect
+	golang.org/x/time v0.14.0 // indirect
 	golang.zx2c4.com/wintun v0.0.0-20230126152724-0fa3db229ce2 // indirect
 	golang.zx2c4.com/wireguard v0.0.0-20250521234502-f333402bd9cb // indirect
 	golang.zx2c4.com/wireguard/windows v1.1.1 // indirect
@@ -59,3 +66,9 @@ require (
 	layeh.com/gopher-luar v1.0.11 // indirect
 	lukechampine.com/blake3 v1.4.1 // indirect
 )
+
+// Fork: native SSH outbound + DNSTT dialer in-process.
+// TODO(parent): pin the real pseudo-version after pushing
+// Taptap56/xray-core: cd AndroidLibXrayLite && go get
+// github.com/Taptap56/xray-core@<commit> && go mod tidy
+replace github.com/xtls/xray-core => github.com/Taptap56/xray-core v0.0.0-20261109130851-d82ae89b8364
