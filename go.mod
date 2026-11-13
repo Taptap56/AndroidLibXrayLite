@@ -71,4 +71,4 @@ require (
 // TODO(parent): pin the real pseudo-version after pushing
 // Taptap56/xray-core: cd AndroidLibXrayLite && go get
 // github.com/Taptap56/xray-core@<commit> && go mod tidy
-replace github.com/xtls/xray-core => github.com/Taptap56/xray-core v0.0.0-20261110054604-9c1e3438bbb0
+replace github.com/xtls/xray-core => github.com/Taptap56/xray-core v0.0.0-20261113025417-95b2be4164c4
